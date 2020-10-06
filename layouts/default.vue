@@ -1,5 +1,5 @@
 <template>
-  <v-app class="white--text" color="deep-purple accent-4" dense dark>
+  <v-app color="deep-purple accent-4" dense dark>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -25,11 +25,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" color="blue" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
+      <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
+      <v-btn class="white--text" icon @click.stop="miniVariant = !miniVariant">
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
       </v-btn>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title class="white--text" v-text="title" />
       <v-spacer />
     </v-app-bar>
     <v-main>
@@ -72,18 +72,6 @@ export default {
           title: 'ติดตามปัญหา',
           to: '/fixit-list/fid',
           color: 'purple darken-2',
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-          color: 'purple darken-2',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-          color: 'orange darken-2',
         },
       ],
       miniVariant: false,

@@ -44,7 +44,7 @@
             <v-text-field
               filled
               color="blue-grey lighten-2"
-              label="สถานที่"
+              label="สถานะ"
             ></v-text-field>
             <v-text-field
               filled

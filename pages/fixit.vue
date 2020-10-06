@@ -92,7 +92,6 @@ export default {
       { text: 'วันที่', value: 'fat', sortable: false },
       { text: 'เจ้าหน้าที่', value: 'carbs', sortable: false },
       { text: 'สถานะ', value: 'protein', sortable: false },
-      { text: 'แก้ไข', value: 'actions', sortable: false },
     ],
     desserts: [],
     editedIndex: -1,
@@ -116,7 +115,7 @@ export default {
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? 'New Item' : 'แก้ไขรายการ'
+      return this.editedIndex === -1 ? 'รายละเอียด' : 'แก้ไขรายการ'
     },
   },
 
